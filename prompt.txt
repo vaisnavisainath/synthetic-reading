@@ -1,0 +1,13 @@
+Act as a computational literary analyst and digital humanities researcher.
+Analyze the uploaded full text of Charlotte Perkins Gilman's 'The Yellow Wallpaper'.
+
+Based on the research framework of feminist standpoint epistemology and the medical gaze:
+1. Identify 5 major literary/cultural themes present in the text:
+   - Domestic Confinement & Patriarchal Control
+   - The Medical Gaze & The Rest Cure
+   - Repression of Female Artistic Expression
+   - The Creeping Double (Subversive Mirror)
+   - Psychosis as Radical Liberation
+2. Assign an intensity score (from 1.0 to 10.0) to each theme based on textual weight and narrative trajectory.
+3. Provide short textual evidence/analysis for each theme.
+4. Output the result strictly formatted as a Python dictionary.

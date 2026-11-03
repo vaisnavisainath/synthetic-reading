@@ -1,0 +1,36 @@
+======================================================================
+ASSIGNMENT 3: SYNTHETIC READING - STEP 1 & 2
+Work: The Yellow Wallpaper by Charlotte Perkins Gilman
+Author/Researcher: Vaisnavi Sainath
+Affiliation: Humanities and Social Science, IIT(ISM) Dhanbad
+Semester: Monsoon Semester 2026
+======================================================================
+
+--- PART 1: 20% SAMPLE LINES ---
+"It is very seldom that mere ordinary people like John and myself secure ancestral halls for the summer."
+"John is a physician, and perhaps—(I would not say it to a living soul, of course, but this is dead paper and a great relief to my mind—) perhaps that is one reason I do not get well faster. You see he does not believe I am sick!"
+"So I take phosphates or phosphites—whichever it is, and tonics, and journeys, and air, and exercise, and am absolutely forbidden to 'work' until I am well again."
+"The paint and paper look as if a boys' school had used it. It is stripped off—the paper—in great patches all around the head of my bed..."
+"The color is repellant, almost revolting; a smouldering unclean yellow, strangely faded by the slow-turning sunlight."
+
+--- PART 2: 20% SAMPLE LINES ---
+"Behind that outside pattern the dim shapes get clearer every day. It is always the same shape, only very numerous. And it is like a woman stooping down and creeping about behind that pattern."
+"At night in any kind of light... it becomes bars! The outside pattern I mean, and the woman behind it is as plain as can be."
+"As soon as it was moonlight and that poor thing began to crawl and shake the pattern, I got up and ran to help her. I pulled and she shook, I shook and she pulled, and before morning we had peeled off yards of that paper."
+"I've got a rope up here that even Jennie did not find. If that woman does get out, and tries to get away, I can tie her!"
+"'I've got out at last,' said I, 'in spite of you and Jane! And I've pulled off most of the paper, so you can't put me back!' Now why should that man have fainted? But he did, and right across my path by the wall, so that I had to creep over him every time!"
+
+======================================================================
+STEP 2: RESEARCHER REFLEXIVITY, SITUATEDNESS & METHODOLOGY
+======================================================================
+
+1. Initial Impression:
+The sampled lines reveal a severe tension between institutional authority (medical and marital) and subjective female experience. The narrator's confinement under the guise of therapeutic 'rest' produces a psychic projection onto the room's wallpaper, transforming spatial entrapment into an eventual, radical rupture of domestic obedience.
+
+2. Research Problem:
+How does institutional paternalism pathologize female creative autonomy as illness, and how does the domestic interior become a site of epistemic violence and counter-hegemonic madness?
+
+3. Theoretical Frameworks Selected:
+- The Medical Gaze & Biopolitics: Analyzing the nineteenth-century 'rest cure' as disciplinary surveillance over the female body.
+- Feminist Standpoint Epistemology & Epistemic Violence: Examining the systematic silencing of the female subject's lived reality by patriarchal medical discourse.
+- Subversive Hysteria (Gilbert & Gubar): Interpreting the creeping double in the wallpaper as the repressed self achieving liberation through psychological refusal.
