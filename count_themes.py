@@ -19,7 +19,8 @@ keep = [l for l in lines
         if not re.search(r"WALL.?PA|^[\s*•·¥.\d]*$|^\s*\d+\.\d+\.\d+", l)]  # running heads, page numbers, ornaments
 t = " ".join(keep)
 for bad, good in {"111 spite": "in spite", "perltaps": "perhaps", "per/zaps": "perhaps",
-                  "wall-p3.per": "wall-paper", "wall-pa per": "wall-paper"}.items():
+                  "wall-p3.per": "wall-paper", "wall-pa per": "wall-paper", "evell": "even",
+                  "T is very seldom": "It is very seldom", 'P""ople': "people", "hall s": "halls"}.items():
     t = t.replace(bad, good)
 words = re.findall(r"[A-Za-z']+", t)
 N = len(words)

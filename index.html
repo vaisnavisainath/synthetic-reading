@@ -78,7 +78,7 @@ footer{background:var(--ink);color:var(--paper);padding:2rem 1.25rem;text-align:
   <h2>How the reading was made</h2>
   <p class="lead">I read the story closely first, stated where I was reading from, then asked a local language model to extract and score themes under the same framework.</p>
   <ol class="steps">
-    <li><b>Partial reading</b>Two sets of lines, each about 20% of the story, read before the full text.</li>
+    <li><b>Partial reading</b>Three blocks, each 20% of its third of the story: the first block, a random block and the last block.</li>
     <li><b>Initial impression and position</b>An impression, a research problem and three theoretical frameworks.</li>
     <li><b>Text upload</b>The whole story, cleaned of page headers, ornaments and scan errors.</li>
     <li><b>Query generation</b>A structured prompt, run in AnythingLLM on LM Studio.</li>
@@ -94,7 +94,7 @@ footer{background:var(--ink);color:var(--paper);padding:2rem 1.25rem;text-align:
     <div>
       <h3>Opening lines</h3>
       <blockquote>“John is a physician, and perhaps … that is one reason I do not get well faster. You see he does not believe I am sick!”</blockquote>
-      <blockquote>“The color is repellant, almost revolting; a smouldering unclean yellow, strangely faded by the slow-turning sunlight.”</blockquote>
+      <blockquote>“So I take phosphates or phosphites—whichever it is, and tonics, and journeys, and air, and exercise, and am absolutely forbidden to ‘work’ until I am well again.”</blockquote>
     </div>
     <div>
       <h3>Later lines</h3>
@@ -120,7 +120,7 @@ footer{background:var(--ink);color:var(--paper);padding:2rem 1.25rem;text-align:
 
 <section>
   <h2>Three statements, tested by counting</h2>
-  <p class="lead">Before counting, I wrote three statements about where each theme should sit. I then cleaned the scanned text (6,229 words), split it into ten equal tenths and counted theme vocabulary per 100 words with <code>count_themes.py</code>.</p>
+  <p class="lead">Before counting, I wrote three statements about where each theme should sit. I then cleaned the scanned text (6,225 words), split it into ten equal tenths and counted theme vocabulary per 100 words with <code>count_themes.py</code>.</p>
   <ul class="res">
     <li><b>Confinement and medical language is denser in the first half.</b> Supported: 0.45 against 0.22 hits per 100 words for confinement, and 0.74 against 0.16 for medical language.</li>
     <li><b>Creeping-double language grows towards the end.</b> Supported: the rank correlation with position in the story is 0.87.</li>
@@ -131,7 +131,7 @@ footer{background:var(--ink);color:var(--paper);padding:2rem 1.25rem;text-align:
   <h3>Interpretation</h3>
   <p>Medical language is heaviest in the first tenth (1.93 per 100 words) and is gone from the seventh tenth onwards, apart from one hit at the very end. In Foucault’s terms the story opens inside the clinical gaze: diagnosis, tonics and regimen are reported as settled facts. Hartsock’s standpoint theory and Spivak’s idea of epistemic violence explain why this matters, because the narrator’s own account is overruled by a husband who is also her doctor (“You see he does not believe I am sick!”). As her attention moves to the wallpaper, her own looking replaces the clinic’s.</p>
   <p>Creeping-double vocabulary is almost absent until the middle and peaks late, in the eighth tenth (1.93). This fits Gilbert and Gubar’s reading of the woman behind the paper as the narrator’s double, a figure who becomes clearer as the narrator identifies with her.</p>
-  <p>Liberation vocabulary stays near zero until the final tenth (0.95), where the narrator peels the paper, says she has “got out at last” and creeps over her fainted husband. Gilman’s own account of the story as an attack on the rest cure makes this the reversal of the opening: the medical gaze is now looked at from outside. Whether the ending is freedom or collapse is what the theme title leaves open. The counts show only that the rupture arrives at the very end. Confinement language also returns in the last tenth (0.79), when she locks the door and throws away the key, so its fall in the first half is not a steady decline.</p>
+  <p>Liberation vocabulary stays near zero until the final tenth (0.96), where the narrator peels the paper, says she has “got out at last” and creeps over her fainted husband. Gilman’s own account of the story as an attack on the rest cure makes this the reversal of the opening: the medical gaze is now looked at from outside. Whether the ending is freedom or collapse is what the theme title leaves open. The counts show only that the rupture arrives at the very end. Confinement language also returns in the last tenth (0.80), when she locks the door and throws away the key, so its fall in the first half is not a steady decline.</p>
   <h3>Limitations</h3>
   <p>The scan has errors that my script fixes only in part, so some matches are missed. Each tenth holds between 0 and 12 hits, so the trends matter more than any single bar. The word lists are mine, built from the verified evidence and key terms, and some words (work, woman, free) have other uses. The 1–10 scores come from one run of one model and are estimates.</p>
   <h3>References</h3>
@@ -178,7 +178,7 @@ D.themes.forEach(function(t){
   b.appendChild(u);d.appendChild(s);d.appendChild(b);box.appendChild(d);
 });
 document.getElementById("method").textContent=D.method;
-var C={"Domestic Confinement & Patriarchal Control":[0.64,0.96,0.48,0,0.16,0,0.16,0.16,0,0.79],"The Medical Gaze & The Rest Cure":[1.93,0.8,0.32,0.16,0.48,0.64,0,0,0,0.16],"Repression of Female Artistic Expression":[0.96,0.64,0.8,0.48,0.48,0.16,0.16,0,0.16,0.16],"The Creeping Double (Subversive Mirror)":[0,0,0.16,0,0.32,0.8,0.16,1.93,1.13,1.43],"Psychosis as Radical Liberation":[0.16,0,0,0.16,0,0,0.16,0,0.16,0.95]};
+var C={"Domestic Confinement & Patriarchal Control":[0.64,0.96,0.48,0,0.16,0,0.16,0.16,0,0.8],"The Medical Gaze & The Rest Cure":[1.93,0.8,0.32,0.16,0.48,0.64,0,0,0,0.16],"Repression of Female Artistic Expression":[0.96,0.64,0.8,0.48,0.48,0.16,0.16,0,0.16,0.16],"The Creeping Double (Subversive Mirror)":[0,0,0.16,0,0.32,0.8,0.16,1.93,1.13,1.44],"Psychosis as Radical Liberation":[0.16,0,0,0.16,0,0,0.16,0,0.16,0.96]};
 var sm=document.getElementById("sm");
 Object.keys(C).forEach(function(k){var v=C[k],m=Math.max.apply(null,v),s="";
   v.forEach(function(x,i){var h=x/2*50;s+='<rect x="'+(i*40+4)+'" y="'+(56-h)+'" width="32" height="'+h+'" fill="'+(x===m?'var(--rust)':'var(--ink)')+'"><title>Tenth '+(i+1)+': '+x+' per 100 words</title></rect><text x="'+(i*40+20)+'" y="68" text-anchor="middle">'+(i+1)+'</text>'});
