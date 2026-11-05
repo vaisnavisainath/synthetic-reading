@@ -1,0 +1,53 @@
+You are assisting a literary researcher who reads "The Yellow Wallpaper" through feminist standpoint epistemology and the medical gaze.
+
+TASK: Read the full text supplied below. For each of the five themes, give an intensity score, a short analysis and textual evidence.
+
+THEMES:
+- Domestic Confinement & Patriarchal Control: Rooms, rules and people that restrict the narrator's movement or voice, above all the nursery with barred windows and John's authority.
+- The Medical Gaze & The Rest Cure: Medical authority and vocabulary: physician, diagnosis, tonics, the rest cure, nervous or hysterical labels applied to the narrator.
+- Repression of Female Artistic Expression: The narrator's wish to write and imagine, and the prohibition of it as harmful to her recovery.
+- The Creeping Double (Subversive Mirror): The woman behind the wallpaper pattern, her creeping and shaking, as a double of the narrator.
+- Psychosis as Radical Liberation: The final rupture: peeling the paper, getting out, and the husband's collapse, read as release from control.
+
+RULES:
+1. Every item of evidence must be copied exactly, word for word, from the supplied text. Do not paraphrase, correct or merge sentences.
+2. Give three pieces of evidence per theme, each from a different part of the story, and use each quotation under one theme only.
+3. Score from 1.0 (barely present) to 10.0 (central), judged by how often the theme appears AND where it falls in the story. Explain the score in the analysis.
+4. Return only a Python dictionary in exactly this shape, with no text before or after it:
+{
+ "Domestic Confinement & Patriarchal Control": {
+  "intensity": "number from 1.0 to 10.0",
+  "analysis": "2-3 sentences",
+  "evidence": [
+   "exact quotation"
+  ]
+ },
+ "The Medical Gaze & The Rest Cure": {
+  "intensity": "number from 1.0 to 10.0",
+  "analysis": "2-3 sentences",
+  "evidence": [
+   "exact quotation"
+  ]
+ },
+ "Repression of Female Artistic Expression": {
+  "intensity": "number from 1.0 to 10.0",
+  "analysis": "2-3 sentences",
+  "evidence": [
+   "exact quotation"
+  ]
+ },
+ "The Creeping Double (Subversive Mirror)": {
+  "intensity": "number from 1.0 to 10.0",
+  "analysis": "2-3 sentences",
+  "evidence": [
+   "exact quotation"
+  ]
+ },
+ "Psychosis as Radical Liberation": {
+  "intensity": "number from 1.0 to 10.0",
+  "analysis": "2-3 sentences",
+  "evidence": [
+   "exact quotation"
+  ]
+ }
+}

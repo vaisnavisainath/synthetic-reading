@@ -124,9 +124,9 @@ footer{background:var(--ink);color:var(--paper);padding:2rem 1.25rem;text-align:
   <h2>Three statements, tested by counting</h2>
   <p class="lead">Before counting, I wrote three statements about where each theme should sit. I then cleaned the scanned text (6,225 words), split it into ten equal tenths and counted theme vocabulary per 100 words with <code>count_themes.py</code>.</p>
   <ul class="res">
-    <li><b>Confinement and medical language is denser in the first half.</b> Supported: 0.45 against 0.22 hits per 100 words for confinement, and 0.74 against 0.16 for medical language.</li>
-    <li><b>Creeping-double language grows towards the end.</b> Supported: the rank correlation with position in the story is 0.87.</li>
-    <li><b>Liberation language is concentrated in the final fifth.</b> Supported: 0.56 hits per 100 words in the last fifth against 0.06 in the first four-fifths.</li>
+    <li><b>Confinement and medical language is denser in the first half.</b> Suggestive for medical language (0.74 against 0.16 hits per 100 words, p ≈ 0.05) and weaker for confinement (0.45 against 0.22, p ≈ 0.20).</li>
+    <li><b>Creeping-double language grows towards the end.</b> Strongly supported: the rank correlation with position in the story is 0.87 (p ≈ 0.001).</li>
+    <li><b>Liberation language is concentrated in the final fifth.</b> Suggestive: 0.56 hits per 100 words in the last fifth against 0.06 in the first four-fifths (p ≈ 0.09).</li>
   </ul>
   <div class="sm" id="sm"></div>
   <p class="note">Hits per 100 words in each tenth of the story, on the same scale for every theme. The highest tenth is in red.</p>
@@ -136,6 +136,7 @@ footer{background:var(--ink);color:var(--paper);padding:2rem 1.25rem;text-align:
   <p>Liberation vocabulary stays near zero until the final tenth (0.96), where the narrator peels the paper, says she has “got out at last” and creeps over her fainted husband. Gilman’s own account of the story as an attack on the rest cure makes this the reversal of the opening: the medical gaze is now looked at from outside. Whether the ending is freedom or collapse is what the theme title leaves open. The counts show only that the rupture arrives at the very end. Confinement language also returns in the last tenth (0.80), when she locks the door and throws away the key, so its fall in the first half is not a steady decline.</p>
   <h3>Limitations</h3>
   <p>The scan has errors that my script fixes only in part, so some matches are missed. Each tenth holds between 0 and 12 hits, so the trends matter more than any single bar. The word lists are mine, built from the verified evidence and key terms, and some words (work, woman, free) have other uses. The 1–10 scores come from one run of one model and are estimates.</p>
+  <p>I also checked how easily the patterns could arise by chance, by shuffling the hit counts of the ten tenths 10,000 times (<code>analysis_extra.py</code>). The rise of creeping-double language is very unlikely to be chance (p ≈ 0.001). The fall of medical language (p ≈ 0.05), the liberation peak (p ≈ 0.09) and the fall of confinement language (p ≈ 0.20) could arise by chance more easily, so I read them as suggestive rather than firm. Removing ambiguous words such as work, fancy, free and shake leaves every pattern in the same direction. The model’s scores also fall in even steps of 0.5 (9.5, 9.0, 8.5, 8.0, 7.5) in the order the themes were listed in the prompt, and they do not follow the counts: creeping-double vocabulary has the most hits (37) but the fourth-highest score. I therefore trust the counts more than the scores.</p>
   <h3>References</h3>
   <div class="refs">
     <p>Foucault, Michel. <i>The Birth of the Clinic: An Archaeology of Medical Perception</i>. Translated by A. M. Sheridan Smith. Tavistock, 1973.</p>
